@@ -65,12 +65,18 @@ body {
   border-bottom: 3px solid #fb9208;
 }
 
+.social {
+  margin-right: 35px;
+}
 .social-list {
   display: flex;
   list-style: none;
 }
 .social-item {
   margin-right: 18px;
+}
+.social-item:last-child {
+  margin-right: 0;
 }
 .social-item-img {
   width: 36px;
@@ -90,6 +96,11 @@ body {
   height: 810px;
 }
 
+.intro-contet {
+  padding-top: 280px;
+  padding-left: 150px;
+}
+
 .intro-title {
   font-weight: bold;
   font-size: 80px;
@@ -105,3 +116,4 @@ body {
   line-height: 38px;
   font-size: 30px;
 }
+
