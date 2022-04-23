@@ -117,3 +117,36 @@ body {
   font-size: 30px;
 }
 
+
+/* ABOUT ME */
+
+.about_me-content {
+  padding-top: 20px;
+}
+.about_me-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_me-foto {
+  height: 700px;
+  margin-left: 30px;
+}
+
+.about_me-text {
+  width: 550px;
+  height: 350px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about_me-title {
+  font-size: 30px;
+}
+.about_me-item h3 {
+  font-size: 25px;
+}
+.about_me-item p {
+  font-size: 20px;
+}
