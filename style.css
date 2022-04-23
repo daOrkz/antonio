@@ -141,7 +141,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.about_me-title {
+.block-title {
   font-size: 30px;
 }
 .about_me-item h3 {
@@ -149,4 +149,20 @@ body {
 }
 .about_me-item p {
   font-size: 20px;
+}
+
+/* GALLERY */
+
+.gallery-content {
+  background-color: rgb(165, 165, 165);
+}
+.gallery-title h3{
+  text-align: center;
+  padding-top: 50px;
+}
+.gallery {
+  padding: 50px 50px;
+}
+.gallery img {
+  height: 600px;
 }
