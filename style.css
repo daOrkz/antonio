@@ -222,13 +222,13 @@ body {
 
 .prices-content {
   background-color: rgb(165, 165, 165);
-  padding-top: 50px;
-  padding:0 50px 50px;
+  padding:50px;
 }
 .prices {
   margin-bottom: -30px;
 }
 .prices-title {
+  /* padding-top: 50px; */
   margin-bottom: 50px;
 }
 .prices-flex {
