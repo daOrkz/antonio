@@ -143,6 +143,7 @@ body {
 }
 .block-title {
   font-size: 30px;
+  text-align: center;
 }
 .about_me-item h3 {
   font-size: 25px;
@@ -165,4 +166,47 @@ body {
 }
 .gallery img {
   height: 600px;
+}
+
+
+/* SEVICES */
+
+.services-content {
+  background-color: grey;
+  padding-top: 50px;
+}
+.services {
+}
+
+.services-title {
+  margin-bottom: 50px;
+}
+.services-flex {
+  display: flex;
+  flex-direction: column;
+
+}
+.services-items {
+  margin: 0 60px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing:content-box;
+
+  background-color: cadetblue;
+}
+.service-text h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.service-text p {
+  font-size: 25px;
+}
+.service-text {
+  margin: 0px 80px;
+}
+.service-img img {
+  height: 400px;
+  display: block;
 }
