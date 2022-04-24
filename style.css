@@ -196,6 +196,12 @@ body {
 
   background-color: cadetblue;
 }
+.service-text:nth-child(odd) {
+  text-align: right
+}
+.service-text:nth-child(even) {
+  text-align: left
+}
 .service-text h3 {
   font-size: 30px;
   margin-bottom: 30px;
