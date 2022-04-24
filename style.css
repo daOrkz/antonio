@@ -223,9 +223,10 @@ body {
 .prices-content {
   background-color: rgb(165, 165, 165);
   padding-top: 50px;
+  padding:0 50px 50px;
 }
 .prices {
-  margin: 50px;
+  margin-bottom: -30px;
 }
 .prices-title {
   margin-bottom: 50px;
@@ -239,10 +240,16 @@ body {
   width: 32%;
   height: 300px;
   margin-bottom: 30px;
+
+  position: relative;
 }
-
+.prices-item:hover .prices-text {
+  opacity: 1;
+}
 .prices-img {
+  position: absolute;
 
+  z-index: 1;
 }
 .prices-img img {
   width: 100%;
@@ -250,11 +257,33 @@ body {
 }
 .prices-text {
 
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.6);
+
+  z-index: 2;
+  opacity: 0;
+
+  transition: 0.3s;
 }
 .prices-text h3 {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 .prices-text p {
   font-size: 20px;
+  font-weight: 600;
+}
+.prices-text:hover {
+  cursor: default;
 }
