@@ -184,7 +184,6 @@ body {
 .services-flex {
   display: flex;
   flex-direction: column;
-
 }
 .services-items {
   margin: 0 60px 50px;
@@ -215,4 +214,47 @@ body {
 .service-img img {
   height: 400px;
   display: block;
+}
+
+/* 
+  PRICES
+*/
+
+.prices-content {
+  background-color: rgb(165, 165, 165);
+  padding-top: 50px;
+}
+.prices {
+  margin: 50px;
+}
+.prices-title {
+  margin-bottom: 50px;
+}
+.prices-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.prices-item {
+  width: 32%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.prices-img {
+
+}
+.prices-img img {
+  width: 100%;
+  height: 300px;
+}
+.prices-text {
+
+}
+.prices-text h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.prices-text p {
+  font-size: 20px;
 }
