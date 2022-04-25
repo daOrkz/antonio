@@ -53,7 +53,7 @@ body {
   text-transform: uppercase;
 
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 18px;
 
   color: black;
@@ -122,6 +122,7 @@ body {
 
 .about_me-content {
   padding-top: 20px;
+  background-color: gray;
 }
 .about_me-flex {
   display: flex;
@@ -130,13 +131,13 @@ body {
 }
 .about_me-foto {
   height: 700px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .about_me-text {
   width: 550px;
-  height: 350px;
-  margin-right: 50px;
+  /* height: 350px; */
+  margin-right: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -144,9 +145,14 @@ body {
 .block-title {
   font-size: 30px;
   text-align: center;
+  margin-bottom: 50px;
+}
+.about_me-item {
+  margin-bottom: 25px;
 }
 .about_me-item h3 {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 .about_me-item p {
   font-size: 20px;
@@ -286,4 +292,44 @@ body {
 }
 .prices-text:hover {
   cursor: default;
+}
+
+
+/* 
+  CONTACTS
+*/
+
+.contacts-content {
+  background-color: grey;
+  padding: 50px 70px;
+}
+.contacts-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts-text p {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #0B141D;
+} 
+.contacts-nav {
+
+}
+.contacts-list {
+  list-style-type: none;
+}
+.contacts-item {
+
+}
+.contacts-item-link {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  line-height: 36px;
+  transition: 0.3s;
+}
+.contacts-item-link:hover {
+  border-bottom: 3px solid #fb9208;
 }
