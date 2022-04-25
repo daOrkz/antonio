@@ -222,13 +222,12 @@ body {
 
 .prices-content {
   background-color: rgb(165, 165, 165);
-  padding:50px;
+  padding: 50px;
 }
 .prices {
   margin-bottom: -30px;
 }
 .prices-title {
-  /* padding-top: 50px; */
   margin-bottom: 50px;
 }
 .prices-flex {
@@ -256,6 +255,7 @@ body {
   height: 300px;
 }
 .prices-text {
+  text-align: center;
 
   position: absolute;
   top: 0;
@@ -281,7 +281,7 @@ body {
   margin-bottom: 20px;
 }
 .prices-text p {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 .prices-text:hover {
