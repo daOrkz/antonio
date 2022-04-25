@@ -168,12 +168,28 @@ body {
   padding-top: 50px;
 }
 .gallery {
-  padding: 50px 50px;
-}
-.gallery img {
-  height: 600px;
+  padding: 0 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.gallery-img {
+  height: 600px;
+}
+.gallery-btn {
+  height: 60px;
+  padding: 20px 5px;
+  border-radius: 5px;
+
+  transition: all 0.2s linear;
+}
+.gallery-btn:hover{
+  background-color: #6c6c6c;
+}
+.gallery-btn:active {
+  background-color: #6666;
+}
 
 /* SEVICES */
 
