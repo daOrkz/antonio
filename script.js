@@ -1,5 +1,8 @@
 const gallery = document.querySelector('.gallery-img')
 const galleryIMG = document.getElementById('gallery-img')
+const prevBtn = document.getElementById('prev-btn')
+const nextBtn = document.getElementById('next-btn')
+
 
 const img = ['_1.jpg','_2.jpg','_3.jpg','_4.jpg']
 
@@ -16,5 +19,17 @@ function nextImg() {
 
   i++
 }
-
 setInterval(nextImg, 3000)
+
+prevBtn.onclick = () => {
+  i--
+  nextImg()
+}
+nextBtn.onclick = () => {
+  i++
+  nextImg()
+}
+
+// galleryIMG.onclick = () => {
+//   galleryIMG.classList.toggle('opened')
+// }

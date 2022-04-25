@@ -177,6 +177,14 @@ body {
 .gallery-img {
   height: 600px;
 }
+/* .full-size {
+
+}
+.opened {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+} */
 .gallery-btn {
   height: 60px;
   padding: 20px 5px;
