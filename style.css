@@ -424,7 +424,17 @@ body {
     margin-bottom: 20px;
   }
   .header {
-    display: none;
+    
+  }
+  .navigation {
+    padding: 0 20px;
+  }
+  .nav-item-link {
+    font-size: 14px;
+  }
+  .social-item-img {
+    width: 30px;
+    height: 30px;
   }
   .intro-contet {
     padding-top: 140px;
