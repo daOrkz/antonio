@@ -167,11 +167,12 @@ body {
 
 .gallery-content {
   background-color: rgb(165, 165, 165);
-}
-.gallery-title h3{
-  text-align: center;
   padding-top: 50px;
 }
+/* .gallery-title h3{
+  text-align: center;
+  padding-top: 50px;
+} */
 .gallery {
   padding: 0 50px 50px;
   display: flex;
@@ -214,7 +215,7 @@ body {
 }
 
 .services-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .services-flex {
   display: flex;
@@ -263,7 +264,7 @@ body {
   margin-bottom: -30px;
 }
 .prices-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .prices-flex {
   display: flex;
@@ -414,6 +415,14 @@ body {
 }
 
 @media(max-width: 770px) {
+  .logo-text {
+    font-size: 24px;
+  }
+  .block-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
   .header {
     display: none;
   }
@@ -440,8 +449,32 @@ body {
     height: 400px;
     margin-left: 0;
   }
+  .about_me-foto img{
+    height: 400px;
+  }
 
   .service-img img {
     height: 200px;
+  }
+
+  .gallery-content {
+    padding: 20px 10px;
+  }
+  .gallery {
+    padding:0;
+  }
+  .prices-content {
+    padding: 20px;
+  }
+  .prices-item {
+    height: 200px;
+  }
+
+  .contacts-item-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contacts-text p{
+    font-size: 18px;
   }
 }
