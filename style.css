@@ -18,7 +18,8 @@ body {
 /* NAVIGATION */
 .navigation {
   background-color: #fff;
-  /* position: sticky; */
+  padding: 0 50px;
+  position: sticky;
 }
 .navigation-flex {
   height: 60px;
@@ -28,7 +29,7 @@ body {
 }
 
 .logo {
-  margin-left: 35px;
+  /* margin-left: 35px; */
 }
 .logo-text{
   font-style: normal;
@@ -66,7 +67,7 @@ body {
 }
 
 .social {
-  margin-right: 35px;
+  /* margin-right: 35px; */
 }
 .social-list {
   display: flex;
