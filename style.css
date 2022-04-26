@@ -133,6 +133,8 @@ body {
 .about_me-foto {
   height: 700px;
   margin-left: 50px;
+
+  z-index: 1;
 }
 
 .about_me-text {
@@ -142,6 +144,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  z-index: 2;
 }
 .block-title {
   font-size: 30px;
@@ -409,7 +413,10 @@ body {
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 770px) {
+  .header {
+    display: none;
+  }
   .intro-contet {
     padding-top: 140px;
     padding-left: 30px;
@@ -427,5 +434,14 @@ body {
     font-weight: bold;
     font-size: 50px;
     line-height: 50px;
+  }
+
+  .about_me-foto {
+    height: 400px;
+    margin-left: 0;
+  }
+
+  .service-img img {
+    height: 200px;
   }
 }
