@@ -39,9 +39,21 @@ nextBtn.onclick = () => {
 const headerBurger = document.querySelector('.header__burger')
 const nav = document.querySelector('.nav')
 const body = document.querySelector('body')
+const navList = document.querySelector('.nav-list')
+const navItemLink = document.querySelectorAll('.nav-item-link')
 
-headerBurger.onclick = () => {
+function toggleClass() {
   nav.classList.toggle('activ')
   headerBurger.classList.toggle('activ')
   body.classList.toggle('lock')
 }
+
+headerBurger.onclick = () => {
+  toggleClass()
+}
+
+navItemLink.forEach(link => {
+  link.onclick = () => {
+    toggleClass()
+  }
+});
