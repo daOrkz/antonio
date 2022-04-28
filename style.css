@@ -9,6 +9,9 @@ body {
   box-sizing: border-box;
 }
 
+.header__burger {
+  display: none;
+}
 .conteiner {
   max-width: 1440px;
   margin: 0 auto;
@@ -19,7 +22,6 @@ body {
 .navigation {
   background-color: #fff;
   padding: 0 50px;
-  position: sticky;
 }
 .navigation-flex {
   height: 60px;
@@ -375,6 +377,9 @@ body {
     font-size: 18px;
   }
 
+  .navigation {
+    padding: 0 20px;
+  }
 
   .gallery-img {
     height: 400px;
@@ -486,5 +491,169 @@ body {
   }
   .contacts-text p{
     font-size: 18px;
+  }
+}
+
+@media (max-width: 430px) {
+  .block-title {
+    margin-bottom: 20px;
+  }
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation-flex {
+    padding: 0 20px;
+    height: 50px;
+  }
+  .logo {
+    z-index: 3;
+  }
+  .social {
+    display: none;
+  }
+  .nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.3s;
+    
+    background-color: grey;
+    z-index: 2;
+  }
+  .nav.activ {
+    padding-top: 70px;
+    top: 0;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    top: 9px;
+    height: 2px;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+
+    transition: all 0.3s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger.activ::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.activ::after {
+    transform: rotate(135deg);
+    bottom: 9px;
+  }
+  .header__burger.activ span {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item {
+    margin-bottom: 15px;
+  }
+
+
+
+
+
+  
+
+  .about_me-content {
+    padding:30px;
+  }
+  .about_me-foto {
+    display: none;
+  }
+  .about_me-text {
+    margin: 0;
+  }
+  .services-content {
+    padding-top: 20px;
+  }
+  .services-items {
+    margin: 10px;
+  }
+
+  .gallery-img {
+    height: 175px;
+  }
+  .gallery-btn {
+    display: none;
+  }
+  .services-items {
+    margin: 0 10px 10px;
+  }
+  .service-img {
+    display: none;
+  }
+  .service-text:nth-child(odd) {
+    text-align: left;
+  }
+  .service-text {
+    margin: 20px;
+  }
+
+  .prices-flex {
+    margin-top: 20px;
+  }
+  .prices-item {
+    width: 100%;
+    height: 80px;
+  }
+  .prices-img {
+    display: none;
+  }
+  .prices-text {
+    opacity: 1;
+    height: 80px;
+  }
+
+  .contacts-content {
+    padding: 20px;
+  }
+  .contacts-nav {
+    display: none;
+  }
+  .contacts-item-link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
