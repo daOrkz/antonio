@@ -9,8 +9,11 @@ body {
   box-sizing: border-box;
 }
 
+.header__burger {
+  display: none;
+}
 .conteiner {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   border: 1px solid black;
 }
@@ -19,7 +22,6 @@ body {
 .navigation {
   background-color: #fff;
   padding: 0 50px;
-  position: sticky;
 }
 .navigation-flex {
   height: 60px;
@@ -133,6 +135,8 @@ body {
 .about_me-foto {
   height: 700px;
   margin-left: 50px;
+
+  z-index: 1;
 }
 
 .about_me-text {
@@ -142,6 +146,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  z-index: 2;
 }
 .block-title {
   font-size: 30px;
@@ -163,11 +169,12 @@ body {
 
 .gallery-content {
   background-color: rgb(165, 165, 165);
-}
-.gallery-title h3{
-  text-align: center;
   padding-top: 50px;
 }
+/* .gallery-title h3{
+  text-align: center;
+  padding-top: 50px;
+} */
 .gallery {
   padding: 0 50px 50px;
   display: flex;
@@ -210,7 +217,7 @@ body {
 }
 
 .services-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .services-flex {
   display: flex;
@@ -226,6 +233,9 @@ body {
 
   background-color: cadetblue;
 }
+.service-text {
+  margin: 0px 80px;
+}
 .service-text:nth-child(odd) {
   text-align: right
 }
@@ -238,9 +248,6 @@ body {
 }
 .service-text p {
   font-size: 25px;
-}
-.service-text {
-  margin: 0px 80px;
 }
 .service-img img {
   height: 400px;
@@ -259,7 +266,7 @@ body {
   margin-bottom: -30px;
 }
 .prices-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .prices-flex {
   display: flex;
@@ -357,4 +364,311 @@ body {
 }
 .contacts-item-link:hover {
   border-bottom: 3px solid #fb9208;
+}
+
+
+@media (max-width: 1100px) {
+
+  .about_me-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .about_me-item p {
+    font-size: 18px;
+  }
+
+  .navigation {
+    padding: 0 20px;
+  }
+
+  .gallery-img {
+    height: 400px;
+  }
+
+  .service-text {
+    margin: 0px 30px;
+  }
+  .service-text h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .service-text p {
+    font-size: 18px;
+  }
+
+  .prices-img img {
+    width: 100%;
+    height: 200px;
+  }
+  .prices-text {
+    width: 100%;
+    height: 200px;
+  }
+  .prices-text h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .prices-text p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .contacts-item-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media(max-width: 770px) {
+  .logo-text {
+    font-size: 24px;
+  }
+  .block-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header {
+    
+  }
+  .navigation {
+    padding: 0 20px;
+  }
+  .nav-item-link {
+    font-size: 14px;
+  }
+  .social-item-img {
+    width: 30px;
+    height: 30px;
+  }
+  .intro-contet {
+    padding-top: 140px;
+    padding-left: 30px;
+  }
+  .intro {
+    background-image: url(img/header_med.jpg);
+    background-repeat: no-repeat;
+    height: 432px;
+  }
+  .intro-text {
+    line-height: 24px;
+    font-size: 24px;
+  }
+  .intro-title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .about_me-foto {
+    height: 400px;
+    margin-left: 0;
+  }
+  .about_me-foto img{
+    height: 400px;
+  }
+
+  .service-img img {
+    height: 200px;
+  }
+
+  .gallery-content {
+    padding: 20px 10px;
+  }
+  .gallery {
+    padding:0;
+  }
+  .prices-content {
+    padding: 20px;
+  }
+  .prices-item {
+    height: 200px;
+  }
+
+  .contacts-item-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contacts-text p{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 430px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .block-title {
+    margin-bottom: 20px;
+  }
+  .header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 50;
+    }
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation-flex {
+    position: relative;
+    padding: 0 20px;
+    height: 50px;
+  }
+  .logo {
+    z-index: 3;
+  }
+  .social {
+    display: none;
+  }
+  .nav-item-link {
+    font-size: 18px;
+  }
+  .nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.3s;
+    
+    background-color: grey;
+    z-index: 2;
+  }
+  .nav.activ {
+    padding-top: 70px;
+    top: 0;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    top: 9px;
+    height: 2px;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+
+    transition: all 0.3s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger.activ::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.activ::after {
+    transform: rotate(135deg);
+    bottom: 9px;
+  }
+  .header__burger.activ span {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item {
+    margin: 0 0 15px;
+  }
+
+
+
+
+
+  
+
+  .about_me-content {
+    padding:30px;
+  }
+  .about_me-foto {
+    display: none;
+  }
+  .about_me-text {
+    margin: 0;
+  }
+  .services-content {
+    padding-top: 20px;
+  }
+  .services-items {
+    margin: 10px;
+  }
+
+  .gallery-img {
+    height: 175px;
+  }
+  .gallery-btn {
+    display: none;
+  }
+  .services-items {
+    margin: 0 10px 10px;
+  }
+  .service-img {
+    display: none;
+  }
+  .service-text:nth-child(odd) {
+    text-align: left;
+  }
+  .service-text {
+    margin: 20px;
+  }
+
+  .prices-flex {
+    margin-top: 20px;
+  }
+  .prices-item {
+    width: 100%;
+    height: 80px;
+  }
+  .prices-img {
+    display: none;
+  }
+  .prices-text {
+    opacity: 1;
+    height: 80px;
+  }
+
+  .contacts-content {
+    padding: 20px;
+  }
+  .contacts-nav {
+    display: none;
+  }
+  .contacts-item-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

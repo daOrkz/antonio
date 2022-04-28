@@ -33,3 +33,15 @@ nextBtn.onclick = () => {
 // galleryIMG.onclick = () => {
 //   galleryIMG.classList.toggle('opened')
 // }
+
+// BURGER
+
+const headerBurger = document.querySelector('.header__burger')
+const nav = document.querySelector('.nav')
+const body = document.querySelector('body')
+
+headerBurger.onclick = () => {
+  nav.classList.toggle('activ')
+  headerBurger.classList.toggle('activ')
+  body.classList.toggle('lock')
+}
