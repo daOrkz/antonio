@@ -43,4 +43,5 @@ const body = document.querySelector('body')
 headerBurger.onclick = () => {
   nav.classList.toggle('activ')
   headerBurger.classList.toggle('activ')
+  body.classList.toggle('lock')
 }

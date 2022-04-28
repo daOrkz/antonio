@@ -495,9 +495,20 @@ body {
 }
 
 @media (max-width: 430px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .block-title {
     margin-bottom: 20px;
   }
+  .header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 50;
+    }
   .navigation {
     position: absolute;
     top: 0;
@@ -509,6 +520,7 @@ body {
     padding: 0;
   }
   .navigation-flex {
+    position: relative;
     padding: 0 20px;
     height: 50px;
   }
@@ -517,6 +529,9 @@ body {
   }
   .social {
     display: none;
+  }
+  .nav-item-link {
+    font-size: 18px;
   }
   .nav {
     position: fixed;
@@ -587,7 +602,7 @@ body {
     align-items: center;
   }
   .nav-item {
-    margin-bottom: 15px;
+    margin: 0 0 15px;
   }
 
 
